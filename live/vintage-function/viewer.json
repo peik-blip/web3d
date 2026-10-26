@@ -1,0 +1,624 @@
+{
+ "schema": 1,
+ "id": "vintage-function",
+ "model": "SIS_Vintage_Layouts",
+ "lang": "fi",
+ "scene": {
+  "file": "https://peik-blip.github.io/web3d/live/vintage-function/scene.62b1c2722263.b64.txt"
+ },
+ "poster": {
+  "wide": "https://peik-blip.github.io/web3d/live/vintage-function/poster-wide.6bfbec97b1f6.webp",
+  "phone": "https://peik-blip.github.io/web3d/live/vintage-function/poster-phone.d716fb1db821.webp",
+  "alt": "Vintage-liike Fredrikinkadulla kadulta katsottuna."
+ },
+ "style": {
+  "background": "#FFFFFF",
+  "edge": "#111111",
+  "face": "#FFFFFF"
+ },
+ "strings": {
+  "chapter_store": "Tila ja käyttö",
+  "caption_store": "Kauppa kalustetaan ja tuotteet sijoitetaan niin, että tila toimii asiakkaalle. Kyse on käytöstä, ei ilmeestä.",
+  "street": "Kadulta",
+  "drawing": "Piirros",
+  "use": "Käyttö",
+  "areas": "Alueet",
+  "whole": "Koko kauppa",
+  "route": "Kulku",
+  "close": "Lähempää",
+  "ring": "Väljä ja rauhallinen",
+  "aisles": "Paljon esillä, silti selkeä",
+  "bays": "Selkeät osastot",
+  "note_street": "",
+  "note_drawing": "",
+  "note_use": "Tilan käyttö: mistä tullaan sisään, mitä ikkunassa näkyy, missä tuotteet ovat, missä sovitetaan.",
+  "note_areas": "Tuotealueet nyt. Seuraavaksi kolme tapaa kalustaa sama tila.",
+  "caption_ring": "Kaikki tuotteet seinillä, keskellä matala pöytä valaisimen alla.",
+  "caption_aisles": "Matalat kaksipuoliset rekit riveissä, seinillä kengät ja taitetut vaatteet.",
+  "caption_bays": "Jokaisella vaatelajilla oma osasto saman seinän varrella; toinen puoli pysyy väljänä.",
+  "note_ring_whole": "Tammi-teräshyllystö kiertää seinät, ja kulmat jäävät väljiksi.",
+  "note_ring_route": "Asiakas kiertää huoneen seiniä pitkin ja pöydän ympäri.",
+  "note_ring_close": "Huoneen näkee yhdellä silmäyksellä.",
+  "note_aisles_whole": "Rekit ovat olkapäätä matalampia, ja seinillä kulkee korkea hyllystö.",
+  "note_aisles_route": "Asiakas kulkee käytävät läpi, rivi kerrallaan.",
+  "note_aisles_close": "Koko kaupan näkee rekkien yli.",
+  "note_bays_whole": "Osastojen päädyt jakavat seinän pieniksi huoneiksi, kullakin oma värinsä.",
+  "note_bays_route": "Asiakas kulkee kaupan läpi ja poikkeaa siihen osastoon, jota hakee.",
+  "note_bays_close": "Paidat, takit ja farkut löytyvät kukin omasta paikastaan.",
+  "hint": "Käännä vetämällä sivulle.",
+  "loading": "Ladataan…",
+  "error": "3D-näkymää ei voitu ladata."
+ },
+ "views": {
+  "street": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "overview": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "fit_scale": 1.103095961
+  },
+  "ring": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "fit_region": {
+    "y": [
+     0,
+     6450
+    ]
+   },
+   "layout": "ring"
+  },
+  "aisles": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -0.8,
+    -1.2,
+    0.525
+   ],
+   "fit_region": {
+    "y": [
+     6000,
+     11000
+    ]
+   },
+   "layout": "aisles"
+  },
+  "bays": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    1,
+    -0.5,
+    1.2
+   ],
+   "fit_region": {
+    "x": [
+     0,
+     1700
+    ],
+    "y": [
+     800,
+     11000
+    ]
+   },
+   "layout": "bays"
+  }
+ },
+ "drag": {
+  "azimuth": 35,
+  "elevation": 15
+ },
+ "timing": {
+  "step_ms": 3500,
+  "move_ms": 2400,
+  "transition_ms": 1200,
+  "sway": {
+   "leg": 8000,
+   "pause": 2000
+  }
+ },
+ "ui": {
+  "hint": false
+ },
+ "outline_only_groups": [],
+ "opaque_line_drawing": true,
+ "chapters": [
+  {
+   "key": "store",
+   "label_key": "chapter_store",
+   "caption_key": "caption_store",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "street",
+     "overlay": "tyoasu",
+     "view": "street",
+     "options": {
+      "layout": "now"
+     },
+     "areas": false,
+     "exterior": true,
+     "route": false,
+     "materials": false,
+     "label_key": "street",
+     "note_key": "note_street",
+     "legend": false
+    },
+    {
+     "key": "drawing",
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "drawing",
+     "note_key": "note_drawing",
+     "legend": false
+    },
+    {
+     "key": "use",
+     "use": true,
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": true,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "use",
+     "note_key": "note_use",
+     "legend": true
+    },
+    {
+     "key": "areas",
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": true,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "areas",
+     "note_key": "note_areas",
+     "legend": true
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "ring",
+   "label_key": "ring",
+   "caption_key": "caption_ring",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_ring_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_ring_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "ring",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_ring_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "aisles",
+   "label_key": "aisles",
+   "caption_key": "caption_aisles",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_aisles_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_aisles_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "aisles",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_aisles_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "bays",
+   "label_key": "bays",
+   "caption_key": "caption_bays",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_bays_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_bays_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "bays",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_bays_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  }
+ ],
+ "options": {
+  "slots": {
+   "layout": [
+    "now",
+    "ring",
+    "aisles",
+    "bays"
+   ]
+  },
+  "defaults": {
+   "layout": "now"
+  },
+  "missing": [],
+  "slide_mm": 0
+ },
+ "areas": {
+  "group": "ZONES",
+  "legend": [
+   {
+    "id": "coats",
+    "name_fi": "Takit ja uutuudet",
+    "colour": "#D9534F"
+   },
+   {
+    "id": "shirts",
+    "name_fi": "Paidat",
+    "colour": "#5FA8D3"
+   },
+   {
+    "id": "dresses",
+    "name_fi": "Mekot",
+    "colour": "#D16BA5"
+   },
+   {
+    "id": "denim",
+    "name_fi": "Housut ja farkut",
+    "colour": "#2F4F8F"
+   },
+   {
+    "id": "brands",
+    "name_fi": "Pienet brändit",
+    "colour": "#81B29A"
+   },
+   {
+    "id": "folded",
+    "name_fi": "Taitetut vaatteet",
+    "colour": "#F2CC5B"
+   },
+   {
+    "id": "shoes",
+    "name_fi": "Kengät ja laukut",
+    "colour": "#F28E2B"
+   },
+   {
+    "id": "accessories",
+    "name_fi": "Asusteet",
+    "colour": "#2BB3B1"
+   },
+   {
+    "id": "jewellery",
+    "name_fi": "Korut",
+    "colour": "#9C6ADE"
+   },
+   {
+    "id": "fitting",
+    "name_fi": "Sovitus",
+    "colour": "#9AA0A6"
+   },
+   {
+    "id": "pay",
+    "name_fi": "Kassa",
+    "colour": "#4A4F55"
+   },
+   {
+    "id": "use_entrance",
+    "name_fi": "Sisäänkäynti",
+    "colour": "#3E8E7E"
+   },
+   {
+    "id": "use_window",
+    "name_fi": "Ikkunanäyttely",
+    "colour": "#E07A5F"
+   },
+   {
+    "id": "use_products",
+    "name_fi": "Tuotteet",
+    "colour": "#F2CC5B"
+   },
+   {
+    "id": "use_fitting",
+    "name_fi": "Sovitus",
+    "colour": "#9AA0A6"
+   },
+   {
+    "id": "use_mirror",
+    "name_fi": "Peilit",
+    "colour": "#7FB3D5"
+   }
+  ],
+  "pale": {
+   "face": "#E4E6E8",
+   "edge": "#CDD1D5",
+   "face_fade": 0.94,
+   "edge_fade": 0.55,
+   "ms": 450
+  },
+  "vanish_groups": [],
+  "tint": true
+ },
+ "interior": {
+  "layout_slot": "layout",
+  "layout_none": "now",
+  "overview": "overview",
+  "street": "street",
+  "street_group": "Street",
+  "drawing_step": "drawing",
+  "back_ms": 1200,
+  "clip_pad": 20,
+  "zone_opacity": 0.14,
+  "route_dim": 0.35,
+  "envelope": {
+   "street_clip_z": 1200.01,
+   "tall_rules": [
+    {
+     "match": "Spine|Flue",
+     "elevation_below": 0.5,
+     "result": false
+    },
+    {
+     "match": "Spine_W",
+     "dir_above": [
+      0,
+      0.5
+     ],
+     "result": false
+    },
+    {
+     "match": "WAL_Spine_",
+     "result": true
+    },
+    {
+     "match": "Party_E|Flue_E",
+     "axis": 0,
+     "sign": -1
+    },
+    {
+     "match": "Party_W|Flue_W",
+     "axis": 0,
+     "sign": 1
+    },
+    {
+     "match": "WAL_Court",
+     "axis": 1,
+     "sign": -1
+    },
+    {
+     "axis": 1,
+     "sign": 1
+    }
+   ]
+  },
+  "batch_views": {
+   "tall": [
+    "overview",
+    "ring",
+    "aisles",
+    "bays"
+   ],
+   "clip": [
+    "street",
+    "ring",
+    "aisles",
+    "bays"
+   ]
+  },
+  "garments": {
+   "colours": [
+    "#D9D1C4",
+    "#B5A38A",
+    "#5C6B80"
+   ],
+   "edge": "#9A9A9A",
+   "fade_start_ms": 2000,
+   "fade_ms": 800
+  },
+  "route": {
+   "colour": "#1A1B1F",
+   "dash_on": 300,
+   "period": 500,
+   "chevron_every": 1200,
+   "min_width": 90,
+   "width_factor": 2.5,
+   "width_dir": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "grow_ms": 2500
+  },
+  "overlay": {
+   "file": "https://peik-blip.github.io/web3d/live/vintage-function/tyoasu.079315df9f50.webp",
+   "corners": [
+    750,
+    290.5,
+    2800,
+    2450,
+    290.5,
+    2800,
+    750,
+    290.5,
+    250,
+    2450,
+    290.5,
+    250
+   ],
+   "fade_ms": 350
+  },
+  "opening": {
+   "chapter": "store",
+   "dwell_ms": [
+    2500,
+    4200
+   ]
+  }
+ },
+ "phone": {
+  "turn": false,
+  "stage": {
+   "min": 0.45,
+   "max": 1
+  },
+  "strings": {
+   "chapter_store": "Tila",
+   "ring": "Väljä",
+   "aisles": "Paljon esillä",
+   "bays": "Osastot"
+  },
+  "reserve": {
+   "tabs": 44,
+   "detail": 383
+  },
+  "reserve_narrow": {
+   "max_width": 335,
+   "detail": 430
+  },
+  "reserve_tablet": {
+   "min_width": 560,
+   "tabs": 44,
+   "detail": 250
+  }
+ },
+ "loader": {
+  "class": "w3d-sisatila"
+ },
+ "moved_from_code": [
+  "interior.*",
+  "timing.transition_ms (1200 in code, 600 in the hosted config)",
+  "chapters[].show_caption",
+  "ui.hint",
+  "phone.strings (short chapter names)"
+ ]
+}
