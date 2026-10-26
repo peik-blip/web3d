@@ -1,0 +1,713 @@
+{
+ "schema": 1,
+ "id": "skn4",
+ "model": "MDL-0031_SKN4_IT",
+ "lang": "en",
+ "scene": {
+  "file": "https://peik-blip.github.io/web3d/test/skn4/scene.df013391088c.b64.txt"
+ },
+ "poster": {
+  "wide": "https://peik-blip.github.io/web3d/test/skn4/skn4-wide.1fd85eff66ea.webp",
+  "phone": "https://peik-blip.github.io/web3d/test/skn4/skn4-phone.b1c4e744cd1d.webp",
+  "alt": "Skincare shop counter"
+ },
+ "strings": {
+  "chapter_tiski": "Counter",
+  "chapter_rakenne": "Structure",
+  "chapter_valo": "Light",
+  "caption_rakenne": "Drawers, trays and frame.",
+  "part_drawers": "Drawers",
+  "part_trays": "Trays",
+  "note_drawers": "The product stock is in the drawers under the trays.",
+  "note_trays": "Each product sits on its own tray at counter level.",
+  "caption_tiski": "Sketch of a skincare shop counter.",
+  "caption_colour": "Väri tulee tuotteista, tiski itse pysyy hillittynä.",
+  "caption_light": "The canopy has built-in track spots and an opal panel that gives soft light.",
+  "terassit": "Two steps",
+  "avoin": "Avoin",
+  "note_perus": "The base option has a small step on the product top.",
+  "note_terassit": "Two equal steps replace the small step.",
+  "note_avoin": "Ovia ei ole: painavat täyttöpakkaukset ovat alhaalla, lahjasetit pienillä korokkeilla ja tuotetaso jää vapaaksi.",
+  "tracks": "Tracks and spots",
+  "soft": "Soft light",
+  "beams": "Light beams",
+  "note_tracks": "The spots on the magnetic tracks are movable: one for each tray and two for the end.",
+  "note_soft": "The canopy is 70 mm thick. Its opal panel gives soft light, and the LEDs are inside the canopy.",
+  "note_beams": "The spots built into the canopy aim the light down at the trays and the end.",
+  "step_piirros": "Drawing",
+  "layer_areas": "Areas",
+  "step_varit": "Colors",
+  "note_piirros": "Sketch of a skincare shop counter.",
+  "note_alueet": "Product areas and storage places. The frame is shown translucent so the drawer areas stand out too.",
+  "note_varit": "The color comes from the products; the counter itself stays restrained.",
+  "hint": "Drag sideways to turn.",
+  "loading": "Loading…",
+  "error": "The 3D view could not be loaded.",
+  "chapter_ylataso": "Top",
+  "chapter_paaty": "Pääty",
+  "caption_top": "Product top options.",
+  "caption_end": "Päätyhyllyjen vaihtoehdot.",
+  "porras": "Step",
+  "syvennys": "Recess",
+  "lahjapinot": "Gift stacks",
+  "ovet": "Doors",
+  "kokeilupiste": "Try station",
+  "rivit": "Rivit",
+  "spotit": "Product spots",
+  "runko": "Frame",
+  "note_recess": "The lower part of the product top is set back, and an LED strip under the upper part lights the recess. The top has a step.",
+  "note_gifts": "Gift stacks and stock are on the end shelves. All product tops and ends fit together.",
+  "note_doors": "Doors close the lowest level of the end shelves. Gift sets are displayed higher up, in view.",
+  "note_try": "The try station has a mirror and a tester tray on top, baskets on the middle level. The lowest level is closed.",
+  "note_facings": "Samat tuotteet ovat rinnakkain omissa ryhmissään. Painavat täyttöpakkaukset ovat alhaalla.",
+  "note_spots": "The trays continue the counter's product spots around the end. Each tray has a tester in front and bottles behind.",
+  "note_frame": "A center wall runs through the frame, and partitions divide the drawer spaces. The ends have their own inner walls.",
+  "placeholder": "Placeholder: tulossa",
+  "hint_ylataso": "Try the variations",
+  "hint_rakenne": "Explore the parts of the model"
+ },
+ "style": {
+  "background": "#FFFFFF",
+  "edge": "#111111",
+  "face": "#FFFFFF"
+ },
+ "views": {
+  "front34": {
+   "dir_from_target_to_camera": [
+    -1,
+    -1,
+    0.8
+   ]
+  },
+  "eye": {
+   "dir_from_target_to_camera": [
+    -0.4,
+    -1,
+    0.18
+   ]
+  },
+  "whole": {
+   "dir_from_target_to_camera": [
+    -1,
+    -1,
+    0.8
+   ]
+  },
+  "terraces": {
+   "dir_from_target_to_camera": [
+    -1,
+    -1,
+    1
+   ]
+  },
+  "end": {
+   "dir_from_target_to_camera": [
+    -1,
+    -1.5,
+    0.4
+   ],
+   "fit_region": {
+    "x": [
+     null,
+     750
+    ],
+    "z": [
+     null,
+     1450
+    ]
+   },
+   "anchor": "left",
+   "snap_ratio": 1.15
+  },
+  "canopy": {
+   "dir_from_target_to_camera": [
+    -0.55,
+    -1,
+    -0.75
+   ],
+   "fit_box": [
+    0,
+    0,
+    1750,
+    4100,
+    1400,
+    2110
+   ]
+  },
+  "beams": {
+   "dir_from_target_to_camera": [
+    -1,
+    -1,
+    1.15
+   ]
+  },
+  "top": {
+   "dir_from_target_to_camera": [
+    -0.6,
+    -1,
+    0.7
+   ],
+   "fit_region": {
+    "z": [
+     900,
+     null
+    ]
+   },
+   "snap_ratio": 1.15
+  }
+ },
+ "drag": {
+  "azimuth": 35,
+  "elevation": 15
+ },
+ "timing": {
+  "step_ms": 3500,
+  "move_ms": 1100,
+  "transition_ms": 600,
+  "wood_transition_ms": 400,
+  "sway": {
+   "leg": 8000,
+   "pause": 2000
+  }
+ },
+ "ui": {
+  "hint": true
+ },
+ "outline_only_groups": [],
+ "chapters": [
+  {
+   "key": "tiski",
+   "label_key": "chapter_tiski",
+   "caption_key": "caption_tiski",
+   "legend": "areas",
+   "sequence": [
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "materials": false,
+     "label_key": "step_piirros",
+     "note_key": "note_piirros",
+     "legend": false
+    },
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "materials": false,
+     "areas": true,
+     "label_key": "layer_areas",
+     "note_key": "note_alueet"
+    },
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "materials": true,
+     "label_key": "step_varit",
+     "note_key": "note_varit",
+     "legend": false
+    }
+   ]
+  },
+  {
+   "key": "ylataso",
+   "label_key": "chapter_ylataso",
+   "caption_key": "caption_top",
+   "materials": true,
+   "sequence": [
+    {
+     "view": "top",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "porras",
+     "note_key": "note_perus"
+    },
+    {
+     "view": "top",
+     "options": {
+      "top": "terraces",
+      "end": "base"
+     },
+     "label_key": "terassit",
+     "note_key": "note_terassit"
+    },
+    {
+     "view": "top",
+     "options": {
+      "top": "recess",
+      "end": "base"
+     },
+     "label_key": "syvennys",
+     "note_key": "note_recess"
+    }
+   ],
+   "hint_key": "hint_ylataso"
+  },
+  {
+   "key": "rakenne",
+   "label_key": "chapter_rakenne",
+   "caption_key": "caption_rakenne",
+   "materials": true,
+   "sequence": [
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "runko",
+     "note_key": "note_frame",
+     "part": "frame"
+    },
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "part_drawers",
+     "note_key": "note_drawers",
+     "part": "drawers"
+    },
+    {
+     "view": "front34",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "part_trays",
+     "note_key": "note_trays",
+     "part": "trays"
+    },
+    {
+     "view": "end",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "lahjapinot",
+     "note_key": "note_gifts"
+    },
+    {
+     "view": "end",
+     "options": {
+      "top": "base",
+      "end": "doors"
+     },
+     "label_key": "ovet",
+     "note_key": "note_doors"
+    },
+    {
+     "view": "end",
+     "options": {
+      "top": "base",
+      "end": "try"
+     },
+     "label_key": "kokeilupiste",
+     "note_key": "note_try"
+    },
+    {
+     "view": "end",
+     "options": {
+      "top": "base",
+      "end": "spots"
+     },
+     "label_key": "spotit",
+     "note_key": "note_spots"
+    }
+   ],
+   "show_caption": true,
+   "hint_key": "hint_rakenne"
+  },
+  {
+   "key": "valo",
+   "label_key": "chapter_valo",
+   "caption_key": "caption_light",
+   "materials": true,
+   "sequence": [
+    {
+     "view": "canopy",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "tracks",
+     "note_key": "note_tracks",
+     "part": "tracks"
+    },
+    {
+     "view": "canopy",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "soft",
+     "note_key": "note_soft",
+     "part": "soft"
+    },
+    {
+     "view": "beams",
+     "options": {
+      "top": "base",
+      "end": "base"
+     },
+     "label_key": "beams",
+     "note_key": "note_beams",
+     "part": "beams",
+     "show": [
+      "light:beams"
+     ]
+    }
+   ]
+  }
+ ],
+ "options": {
+  "slots": {
+   "top": [
+    "base",
+    "terraces",
+    "recess"
+   ],
+   "end": [
+    "base",
+    "doors",
+    "try",
+    "simple",
+    "facings",
+    "spots"
+   ]
+  },
+  "defaults": {
+   "top": "base",
+   "end": "base"
+  },
+  "missing": [],
+  "slide_mm": 16
+ },
+ "variants": {
+  "default": "pine",
+  "label": "Wood",
+  "aria": "Wood color",
+  "swatch": "#e8d2a6",
+  "keep_groups": [
+   "PRODUCTS"
+  ],
+  "sets": [
+   {
+    "key": "pine",
+    "label": "Light",
+    "colours": {
+     "#e8d2a6": "#e8d2a6",
+     "#dcc7a0": "#dcc7a0"
+    }
+   },
+   {
+    "key": "dark",
+    "label": "Dark",
+    "colours": {
+     "#e8d2a6": "#80664f",
+     "#dcc7a0": "#91765c"
+    }
+   }
+  ]
+ },
+ "parts": [
+  {
+   "key": "drawers",
+   "groups": [],
+   "labels": [],
+   "label_key": "part_drawers",
+   "note_key": "note_drawers",
+   "prefixes": [
+    "DR_"
+   ]
+  },
+  {
+   "key": "trays",
+   "groups": [],
+   "labels": [],
+   "label_key": "part_trays",
+   "note_key": "note_trays",
+   "prefixes": [
+    "TR_",
+    "PT_"
+   ]
+  },
+  {
+   "key": "tracks",
+   "groups": [],
+   "labels": [
+    "CL_track_s",
+    "CL_track_f",
+    "CL_track_n",
+    "CL_track_e",
+    "CL_spot_s1",
+    "CL_spot_s2",
+    "CL_spot_s3",
+    "CL_spot_s4",
+    "CL_spot_s5",
+    "CL_spot_s6",
+    "CL_spot_f1",
+    "CL_spot_f2",
+    "CL_spot_f3",
+    "CL_spot_f4",
+    "CL_spot_f5",
+    "CL_spot_f6",
+    "CL_spot_n",
+    "CL_spot_e"
+   ],
+   "label_key": "tracks",
+   "note_key": "note_tracks"
+  },
+  {
+   "key": "soft",
+   "groups": [],
+   "labels": [
+    "CL_diffuser"
+   ],
+   "label_key": "soft",
+   "note_key": "note_soft"
+  },
+  {
+   "key": "beams",
+   "groups": [
+    "BEAMS"
+   ],
+   "labels": [
+    "CL_spot_s1",
+    "CL_spot_s2",
+    "CL_spot_s3",
+    "CL_spot_s4",
+    "CL_spot_s5",
+    "CL_spot_s6",
+    "CL_spot_f1",
+    "CL_spot_f2",
+    "CL_spot_f3",
+    "CL_spot_f4",
+    "CL_spot_f5",
+    "CL_spot_f6",
+    "CL_spot_n",
+    "CL_spot_e"
+   ],
+   "ghost_only": [
+    "CL_body",
+    "CL_diffuser"
+   ],
+   "label_key": "beams",
+   "note_key": "note_beams"
+  },
+  {
+   "key": "frame",
+   "groups": [],
+   "labels": [
+    "CT_spine",
+    "CT_part_s1",
+    "CT_part_s2",
+    "CT_part_s3",
+    "CT_part_s4",
+    "CT_part_s5",
+    "CT_part_s6",
+    "CT_part_s7",
+    "CT_part_f1",
+    "CT_part_f2",
+    "CT_part_f3",
+    "CT_part_f4",
+    "CT_part_f5",
+    "CT_part_f6",
+    "CT_part_f7",
+    "ST_beam",
+    "ST_cross_1",
+    "ST_cross_2",
+    "ST_foot_1",
+    "ST_foot_2",
+    "ST_foot_3",
+    "ST_foot_4",
+    "ST_stub_1",
+    "ST_stub_2",
+    "EN_core_near_low",
+    "EN_core_near_high",
+    "EN_core_far_low",
+    "EN_core_far_high",
+    "ST_driver"
+   ],
+   "label_key": "runko",
+   "note_key": "note_frame"
+  }
+ ],
+ "part_focus": {
+  "face": "#EEEEEE",
+  "edge": "#CCCCCC",
+  "face_opacity": 0.035,
+  "edge_opacity": 0.1
+ },
+ "light": {
+  "colour": "#ffe7a8",
+  "beam_colour": "#ffd98a",
+  "beam_opacity": 0.24,
+  "beam_tag": "light:beams",
+  "lit": [
+   {
+    "part": "soft",
+    "labels": [
+     "CL_diffuser"
+    ]
+   },
+   {
+    "part": "beams",
+    "prefixes": [
+     "CL_spot_"
+    ]
+   }
+  ]
+ },
+ "drawer": {
+  "part": "drawers",
+  "labels": [
+   "DR_front_s4_2",
+   "DR_pull_s4_2",
+   "DR_box_s4_2",
+   "Z3_DR_box_s4_2",
+   "PD_1",
+   "PD_2",
+   "PD_3",
+   "PD_4",
+   "PD_5",
+   "PD_6",
+   "PD_7",
+   "PD_8",
+   "PD_9",
+   "PD_10",
+   "PD_11",
+   "PD_12",
+   "PD_13",
+   "PD_14",
+   "PD_15",
+   "PD_16",
+   "PD_17",
+   "PD_18",
+   "PD_19",
+   "PD_20",
+   "PD_21",
+   "PD_22",
+   "PD_23",
+   "PD_24",
+   "PD_25",
+   "PD_26",
+   "PD_27",
+   "PD_28",
+   "PD_29",
+   "PD_30",
+   "PD_31",
+   "PD_32",
+   "PD_33",
+   "PD_34",
+   "PD_35",
+   "PD_36",
+   "PD_37",
+   "PD_38",
+   "PD_39",
+   "PD_40"
+  ],
+  "open_offset": [
+   0,
+   -350,
+   0
+  ],
+  "open_ms": 900,
+  "close_ms": 900
+ },
+ "areas": {
+  "group": "ZONES",
+  "legend": [
+   {
+    "id": "Z1",
+    "name_fi": "Featured",
+    "name_en": "Featured",
+    "colour": "#E07A5F"
+   },
+   {
+    "id": "Z2",
+    "name_fi": "Range",
+    "name_en": "Range",
+    "colour": "#3D8BBF"
+   },
+   {
+    "id": "Z3",
+    "name_fi": "Stock",
+    "name_en": "Stock",
+    "colour": "#81B29A"
+   },
+   {
+    "id": "Z4",
+    "name_fi": "Gift sets",
+    "name_en": "Gift sets",
+    "colour": "#9C6ADE"
+   },
+   {
+    "id": "Z5",
+    "name_fi": "Gifts on display",
+    "name_en": "Gifts on display",
+    "colour": "#F2CC5B"
+   },
+   {
+    "id": "Z6",
+    "name_fi": "Gift stock",
+    "name_en": "Gift stock",
+    "colour": "#D16BA5"
+   }
+  ],
+  "pale": {
+   "face": "#E4E6E8",
+   "edge": "#CDD1D5",
+   "face_fade": 0.94,
+   "edge_fade": 0.55,
+   "ms": 450
+  },
+  "vanish_groups": [
+   "PRODUCTS"
+  ]
+ },
+ "phone": {
+  "turn": false,
+  "stage": {
+   "min": 0.45,
+   "max": 1
+  },
+  "reserve": {
+   "tabs": 44,
+   "detail": 326
+  },
+  "reserve_narrow": {
+   "max_width": 335,
+   "detail": 355
+  },
+  "reserve_tablet": {
+   "min_width": 560,
+   "tabs": 44,
+   "detail": 253
+  }
+ },
+ "loader": {
+  "class": "w3d-kaluste"
+ },
+ "moved_from_code": [
+  "strings.placeholder",
+  "variants.label/aria/swatch/keep_groups",
+  "options.slide_mm",
+  "light.*",
+  "drawer.part",
+  "areas.pale",
+  "areas.vanish_groups",
+  "chapters[rakenne].show_caption",
+  "ui.hint"
+ ]
+}

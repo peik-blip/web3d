@@ -1,0 +1,640 @@
+{
+ "schema": 1,
+ "id": "vintage-function",
+ "model": "SIS_Vintage_Layouts",
+ "lang": "en",
+ "scene": {
+  "file": "https://peik-blip.github.io/web3d/test/vintage-function/scene.62b1c2722263.b64.txt"
+ },
+ "poster": {
+  "wide": "https://peik-blip.github.io/web3d/test/vintage-function/poster-wide.6bfbec97b1f6.webp",
+  "phone": "https://peik-blip.github.io/web3d/test/vintage-function/poster-phone.d716fb1db821.webp",
+  "alt": "Vintage shop on Fredrikinkatu seen from the street."
+ },
+ "style": {
+  "background": "#FFFFFF",
+  "edge": "#111111",
+  "face": "#FFFFFF"
+ },
+ "strings": {
+  "chapter_store": "Space and use",
+  "caption_store": "The shop is furnished and the products are placed so that the space works for the customer. This is about use, not looks.",
+  "street": "From the street",
+  "drawing": "Drawing",
+  "use": "Use",
+  "areas": "Areas",
+  "whole": "Whole shop",
+  "route": "Route",
+  "close": "Closer",
+  "ring": "Spacious and calm",
+  "aisles": "Lots on display, still clear",
+  "bays": "Clear sections",
+  "note_street": "",
+  "note_drawing": "",
+  "note_use": "The space in use: where customers come in, what the window shows, where the products are, where they try things on.",
+  "note_areas": "Product areas as they are now. Next, three ways to furnish the same space.",
+  "caption_ring": "All products on the walls, a low table under a lamp in the middle.",
+  "caption_aisles": "Low double-sided racks in rows, shoes and folded clothes on the walls.",
+  "caption_bays": "Each type of clothing has its own section along the same wall; the other side stays open.",
+  "note_ring_whole": "Oak and steel shelving runs around the walls, and the corners stay open.",
+  "note_ring_route": "The customer walks along the walls of the room and around the table.",
+  "note_ring_close": "The whole room is visible at a glance.",
+  "note_aisles_whole": "The racks are lower than shoulder height, and tall shelving runs along the walls.",
+  "note_aisles_route": "The customer walks through the aisles, one row at a time.",
+  "note_aisles_close": "The whole shop is visible over the racks.",
+  "note_bays_whole": "The ends of the sections divide the wall into small rooms, each with its own color.",
+  "note_bays_route": "The customer walks through the shop and steps into the section they are looking for.",
+  "note_bays_close": "Shirts, jackets and jeans each have their own place.",
+  "hint": "Drag sideways to turn.",
+  "loading": "Loading…",
+  "error": "The 3D view could not be loaded."
+ },
+ "views": {
+  "street": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "overview": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "fit_scale": 1.103095961
+  },
+  "ring": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "fit_region": {
+    "y": [
+     0,
+     6450
+    ]
+   },
+   "layout": "ring"
+  },
+  "aisles": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    -0.8,
+    -1.2,
+    0.525
+   ],
+   "fit_region": {
+    "y": [
+     6000,
+     11000
+    ]
+   },
+   "layout": "aisles"
+  },
+  "bays": {
+   "type": "orthographic",
+   "dir_from_target_to_camera": [
+    1,
+    -0.5,
+    1.2
+   ],
+   "fit_region": {
+    "x": [
+     0,
+     1700
+    ],
+    "y": [
+     800,
+     11000
+    ]
+   },
+   "layout": "bays"
+  }
+ },
+ "drag": {
+  "azimuth": 35,
+  "elevation": 15
+ },
+ "timing": {
+  "step_ms": 3500,
+  "move_ms": 2400,
+  "transition_ms": 1200,
+  "sway": {
+   "leg": 8000,
+   "pause": 2000
+  }
+ },
+ "ui": {
+  "hint": false
+ },
+ "outline_only_groups": [],
+ "opaque_line_drawing": true,
+ "chapters": [
+  {
+   "key": "store",
+   "label_key": "chapter_store",
+   "caption_key": "caption_store",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "street",
+     "overlay": "tyoasu",
+     "view": "street",
+     "options": {
+      "layout": "now"
+     },
+     "areas": false,
+     "exterior": true,
+     "route": false,
+     "materials": false,
+     "label_key": "street",
+     "note_key": "note_street",
+     "legend": false
+    },
+    {
+     "key": "drawing",
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "drawing",
+     "note_key": "note_drawing",
+     "legend": false
+    },
+    {
+     "key": "use",
+     "use": true,
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": true,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "use",
+     "note_key": "note_use",
+     "legend": true
+    },
+    {
+     "key": "areas",
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "areas": true,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "areas",
+     "note_key": "note_areas",
+     "legend": true
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "ring",
+   "label_key": "ring",
+   "caption_key": "caption_ring",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_ring_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_ring_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "ring",
+     "options": {
+      "layout": "ring"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_ring_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "aisles",
+   "label_key": "aisles",
+   "caption_key": "caption_aisles",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_aisles_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_aisles_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "aisles",
+     "options": {
+      "layout": "aisles"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_aisles_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  },
+  {
+   "key": "bays",
+   "label_key": "bays",
+   "caption_key": "caption_bays",
+   "legend": "areas",
+   "sequence": [
+    {
+     "key": "whole",
+     "view": "overview",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "whole",
+     "note_key": "note_bays_whole",
+     "legend": false
+    },
+    {
+     "key": "route",
+     "view": "overview",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": true,
+     "materials": false,
+     "label_key": "route",
+     "note_key": "note_bays_route",
+     "legend": false
+    },
+    {
+     "key": "close",
+     "view": "overview",
+     "proof_view": "bays",
+     "options": {
+      "layout": "bays"
+     },
+     "areas": false,
+     "exterior": false,
+     "route": false,
+     "materials": false,
+     "label_key": "close",
+     "note_key": "note_bays_close",
+     "legend": false
+    }
+   ],
+   "show_caption": true
+  }
+ ],
+ "options": {
+  "slots": {
+   "layout": [
+    "now",
+    "ring",
+    "aisles",
+    "bays"
+   ]
+  },
+  "defaults": {
+   "layout": "now"
+  },
+  "missing": [],
+  "slide_mm": 0
+ },
+ "areas": {
+  "group": "ZONES",
+  "legend": [
+   {
+    "id": "coats",
+    "name_fi": "Coats and new arrivals",
+    "colour": "#D9534F",
+    "name_en": "Coats and new arrivals"
+   },
+   {
+    "id": "shirts",
+    "name_fi": "Shirts",
+    "colour": "#5FA8D3",
+    "name_en": "Shirts"
+   },
+   {
+    "id": "dresses",
+    "name_fi": "Dresses",
+    "colour": "#D16BA5",
+    "name_en": "Dresses"
+   },
+   {
+    "id": "denim",
+    "name_fi": "Trousers and jeans",
+    "colour": "#2F4F8F",
+    "name_en": "Trousers and jeans"
+   },
+   {
+    "id": "brands",
+    "name_fi": "Small brands",
+    "colour": "#81B29A",
+    "name_en": "Small brands"
+   },
+   {
+    "id": "folded",
+    "name_fi": "Folded clothes",
+    "colour": "#F2CC5B",
+    "name_en": "Folded clothes"
+   },
+   {
+    "id": "shoes",
+    "name_fi": "Shoes and bags",
+    "colour": "#F28E2B",
+    "name_en": "Shoes and bags"
+   },
+   {
+    "id": "accessories",
+    "name_fi": "Accessories",
+    "colour": "#2BB3B1",
+    "name_en": "Accessories"
+   },
+   {
+    "id": "jewellery",
+    "name_fi": "Jewelry",
+    "colour": "#9C6ADE",
+    "name_en": "Jewelry"
+   },
+   {
+    "id": "fitting",
+    "name_fi": "Fitting room",
+    "colour": "#9AA0A6",
+    "name_en": "Fitting room"
+   },
+   {
+    "id": "pay",
+    "name_fi": "Checkout",
+    "colour": "#4A4F55",
+    "name_en": "Checkout"
+   },
+   {
+    "id": "use_entrance",
+    "name_fi": "Entrance",
+    "colour": "#3E8E7E",
+    "name_en": "Entrance"
+   },
+   {
+    "id": "use_window",
+    "name_fi": "Window display",
+    "colour": "#E07A5F",
+    "name_en": "Window display"
+   },
+   {
+    "id": "use_products",
+    "name_fi": "Products",
+    "colour": "#F2CC5B",
+    "name_en": "Products"
+   },
+   {
+    "id": "use_fitting",
+    "name_fi": "Fitting room",
+    "colour": "#9AA0A6",
+    "name_en": "Fitting room"
+   },
+   {
+    "id": "use_mirror",
+    "name_fi": "Mirrors",
+    "colour": "#7FB3D5",
+    "name_en": "Mirrors"
+   }
+  ],
+  "pale": {
+   "face": "#E4E6E8",
+   "edge": "#CDD1D5",
+   "face_fade": 0.94,
+   "edge_fade": 0.55,
+   "ms": 450
+  },
+  "vanish_groups": [],
+  "tint": true
+ },
+ "interior": {
+  "layout_slot": "layout",
+  "layout_none": "now",
+  "overview": "overview",
+  "street": "street",
+  "street_group": "Street",
+  "drawing_step": "drawing",
+  "back_ms": 1200,
+  "clip_pad": 20,
+  "zone_opacity": 0.14,
+  "route_dim": 0.35,
+  "envelope": {
+   "street_clip_z": 1200.01,
+   "tall_rules": [
+    {
+     "match": "Spine|Flue",
+     "elevation_below": 0.5,
+     "result": false
+    },
+    {
+     "match": "Spine_W",
+     "dir_above": [
+      0,
+      0.5
+     ],
+     "result": false
+    },
+    {
+     "match": "WAL_Spine_",
+     "result": true
+    },
+    {
+     "match": "Party_E|Flue_E",
+     "axis": 0,
+     "sign": -1
+    },
+    {
+     "match": "Party_W|Flue_W",
+     "axis": 0,
+     "sign": 1
+    },
+    {
+     "match": "WAL_Court",
+     "axis": 1,
+     "sign": -1
+    },
+    {
+     "axis": 1,
+     "sign": 1
+    }
+   ]
+  },
+  "batch_views": {
+   "tall": [
+    "overview",
+    "ring",
+    "aisles",
+    "bays"
+   ],
+   "clip": [
+    "street",
+    "ring",
+    "aisles",
+    "bays"
+   ]
+  },
+  "garments": {
+   "colours": [
+    "#D9D1C4",
+    "#B5A38A",
+    "#5C6B80"
+   ],
+   "edge": "#9A9A9A",
+   "fade_start_ms": 2000,
+   "fade_ms": 800
+  },
+  "route": {
+   "colour": "#1A1B1F",
+   "dash_on": 300,
+   "period": 500,
+   "chevron_every": 1200,
+   "min_width": 90,
+   "width_factor": 2.5,
+   "width_dir": [
+    -1,
+    -1.2,
+    1.6
+   ],
+   "grow_ms": 2500
+  },
+  "overlay": {
+   "file": "https://peik-blip.github.io/web3d/test/vintage-function/tyoasu.079315df9f50.webp",
+   "corners": [
+    750,
+    290.5,
+    2800,
+    2450,
+    290.5,
+    2800,
+    750,
+    290.5,
+    250,
+    2450,
+    290.5,
+    250
+   ],
+   "fade_ms": 350
+  },
+  "opening": {
+   "chapter": "store",
+   "dwell_ms": [
+    2500,
+    4200
+   ]
+  }
+ },
+ "phone": {
+  "turn": false,
+  "stage": {
+   "min": 0.45,
+   "max": 1
+  },
+  "strings": {
+   "chapter_store": "Space",
+   "ring": "Spacious",
+   "aisles": "Lots on display",
+   "bays": "Sections"
+  },
+  "reserve": {
+   "tabs": 88,
+   "detail": 436
+  },
+  "reserve_narrow": {
+   "max_width": 335,
+   "detail": 488
+  },
+  "reserve_tablet": {
+   "min_width": 560,
+   "tabs": 44,
+   "detail": 274
+  }
+ },
+ "loader": {
+  "class": "w3d-sisatila"
+ },
+ "moved_from_code": [
+  "interior.*",
+  "timing.transition_ms (1200 in code, 600 in the hosted config)",
+  "chapters[].show_caption",
+  "ui.hint",
+  "phone.strings (short chapter names)"
+ ]
+}
