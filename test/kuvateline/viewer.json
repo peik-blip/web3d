@@ -1,0 +1,341 @@
+{
+ "schema": 1,
+ "id": "kuvateline",
+ "model": "MDL-0017_Kuvateline_IT",
+ "lang": "fi",
+ "scene": {
+  "file": "https://peik-blip.github.io/web3d/test/kuvateline/scene.3f3f45b3633c.b64.txt"
+ },
+ "poster": {
+  "wide": "https://peik-blip.github.io/web3d/test/kuvateline/poster-wide.335febcd3fe1.webp",
+  "phone": "https://peik-blip.github.io/web3d/test/kuvateline/poster-phone.0f58b159d0f0.webp",
+  "alt": "Kenkäkaupan näyteikkuna kadulta katsottuna."
+ },
+ "style": {
+  "background": "#FFFFFF",
+  "edge": "#545b60",
+  "face": "#FFFFFF"
+ },
+ "strings": {
+  "ikkuna": "Ikkuna",
+  "rakenne": "Rakenne",
+  "jalustat": "Jalustat",
+  "poster": "Kampanjakuva",
+  "stand": "Kuvateline",
+  "plinths": "Jalustat",
+  "window_note": "Kenkäkaupan näyteikkuna: kampanjakuva kuvatelineessä ja kenkäkuvat jalustoilla, takana myymälä.",
+  "structure_note": "Kuva riippuu kahdessa alumiinikoukussa, ja sen vaihtaa nostamalla irti.",
+  "back_note": "Kuvateline: teräsputkiset pystytolpat, pohjalevyt, takatuet ja kaksi irrotettavaa poikkitankoa.",
+  "plinth_note": "Jalusta: viisi liimattua akryylilevyä, avoin pohja. Kenkäkuva seisoo uritetussa akryylijalassa.",
+  "hint": "Käännä vetämällä sivulle.",
+  "loading": "Ladataan…",
+  "error": "3D-näkymää ei voitu ladata.",
+  "intro": "Kenkäkaupan näyteikkuna ja sen rakenne."
+ },
+ "views": {
+  "street": {
+   "dir_from_target_to_camera": [
+    -0.2,
+    -1,
+    0.25
+   ]
+  },
+  "front": {
+   "dir_from_target_to_camera": [
+    -0.55,
+    -1,
+    0.55
+   ],
+   "fit_region": {
+    "x": [
+     290,
+     2460
+    ],
+    "y": [
+     170,
+     910
+    ],
+    "z": [
+     470,
+     3260
+    ]
+   },
+   "isolate": true
+  },
+  "back": {
+   "dir_from_target_to_camera": [
+    0.6,
+    1,
+    0.55
+   ],
+   "fit_region": {
+    "x": [
+     290,
+     2460
+    ],
+    "y": [
+     170,
+     910
+    ],
+    "z": [
+     470,
+     3260
+    ]
+   },
+   "isolate": true
+  },
+  "left": {
+   "dir_from_target_to_camera": [
+    -0.55,
+    -1,
+    0.55
+   ],
+   "fit_region": {
+    "x": [
+     550,
+     950
+    ],
+    "y": [
+     180,
+     570
+    ],
+    "z": [
+     480,
+     1158
+    ]
+   },
+   "isolate": true,
+   "snap_ratio": 1
+  }
+ },
+ "drag": {
+  "azimuth": 35,
+  "elevation": 15
+ },
+ "timing": {
+  "step_ms": 3500,
+  "move_ms": 1200,
+  "transition_ms": 850,
+  "sway": {
+   "leg": 8000,
+   "pause": 2000
+  }
+ },
+ "ui": {
+  "hint": true
+ },
+ "outline_only_groups": [],
+ "chapters": [
+  {
+   "key": "ikkuna",
+   "label_key": "ikkuna",
+   "caption_key": "window_note",
+   "materials": true,
+   "sequence": [
+    {
+     "key": "store",
+     "view": "street",
+     "label_key": "ikkuna",
+     "note_key": "window_note",
+     "photo": 1,
+     "materials": true,
+     "options": {},
+     "look": "street",
+     "hide": [
+      "Pavement · Road"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "rakenne",
+   "label_key": "rakenne",
+   "caption_key": "structure_note",
+   "materials": true,
+   "sequence": [
+    {
+     "key": "fade",
+     "view": "front",
+     "label_key": "poster",
+     "note_key": "structure_note",
+     "photo": 0,
+     "materials": true,
+     "options": {},
+     "hide": [
+      "Window spots"
+     ]
+    },
+    {
+     "key": "back",
+     "view": "back",
+     "label_key": "stand",
+     "note_key": "back_note",
+     "photo": 0,
+     "materials": true,
+     "options": {},
+     "hide": [
+      "Window spots"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "jalustat",
+   "label_key": "jalustat",
+   "caption_key": "plinth_note",
+   "materials": true,
+   "sequence": [
+    {
+     "key": "left",
+     "view": "left",
+     "label_key": "plinths",
+     "note_key": "plinth_note",
+     "photo": 0,
+     "materials": true,
+     "options": {}
+    }
+   ]
+  }
+ ],
+ "display": {
+  "edge": "#545b60",
+  "white": {
+   "groups": [
+    "Poster"
+   ],
+   "look": "street",
+   "except": [
+    "Poster",
+    "Poster stand",
+    "Plinths",
+    "Shoe pictures"
+   ]
+  },
+  "rules": [
+   {
+    "group": "Plinths",
+    "opacity": 0.18,
+    "edge": "#8399a3",
+    "edge_opacity": 0.7
+   },
+   {
+    "group": "Shoe pictures",
+    "label_prefix": "Foot",
+    "opacity": 0.18,
+    "edge": "#8399a3",
+    "edge_opacity": 0.7
+   },
+   {
+    "group": "Glass",
+    "look": "street",
+    "opacity": 0.06,
+    "edge": "#c9d3d8",
+    "edge_opacity": 0.5
+   },
+   {
+    "group": "Poster",
+    "photo": 0,
+    "opacity": 0.08,
+    "edge": "#c4c8cb",
+    "edge_opacity": 0.5
+   }
+  ]
+ },
+ "image_planes": [
+  {
+   "key": "poster",
+   "file": "https://peik-blip.github.io/web3d/test/kuvateline/poster.5e6ba6427b25.webp",
+   "x": [
+    300,
+    2450
+   ],
+   "z": [
+    550,
+    3250
+   ],
+   "y": 594.5,
+   "u": [
+    0.10185185185185185,
+    0.8981481481481481
+   ],
+   "v": [
+    0,
+    1
+   ],
+   "alphaTest": 0,
+   "opacity_from": "photo"
+  },
+  {
+   "key": "shoe0",
+   "file": "https://peik-blip.github.io/web3d/test/kuvateline/shoe.e4c9b6a4bf9a.webp",
+   "x": [
+    550,
+    950
+   ],
+   "z": [
+    905,
+    1157.7
+   ],
+   "y": 371.5,
+   "u": [
+    0,
+    1
+   ],
+   "v": [
+    0,
+    1
+   ],
+   "alphaTest": 0.01
+  },
+  {
+   "key": "shoe1",
+   "file": "https://peik-blip.github.io/web3d/test/kuvateline/shoe.e4c9b6a4bf9a.webp",
+   "x": [
+    1630,
+    2030
+   ],
+   "z": [
+    905,
+    1157.7
+   ],
+   "y": 371.5,
+   "u": [
+    0,
+    1
+   ],
+   "v": [
+    0,
+    1
+   ],
+   "alphaTest": 0.01
+  }
+ ],
+ "phone": {
+  "turn": false,
+  "stage": {
+   "min": 0.45,
+   "max": 1
+  },
+  "reserve": {
+   "tabs": 44,
+   "detail": 147
+  },
+  "reserve_narrow": {
+   "max_width": 335,
+   "detail": 176
+  },
+  "reserve_tablet": {
+   "min_width": 560,
+   "tabs": 44,
+   "detail": 118
+  }
+ },
+ "loader": {
+  "class": "w3d-ikkuna"
+ },
+ "moved_from_code": [
+  "display.*",
+  "image_planes[poster].opacity_from",
+  "ui.hint"
+ ]
+}
