@@ -7,9 +7,9 @@
   "file": "https://peik-blip.github.io/web3d/test/vintage-function/scene.62b1c2722263.b64.txt"
  },
  "poster": {
-  "wide": "https://peik-blip.github.io/web3d/test/vintage-function/poster-wide.6bfbec97b1f6.webp",
-  "phone": "https://peik-blip.github.io/web3d/test/vintage-function/poster-phone.d716fb1db821.webp",
-  "alt": "Vintage-liike Fredrikinkadulla kadulta katsottuna."
+  "wide": "https://peik-blip.github.io/web3d/test/vintage-function/poster-wide.1a0da2ea8940.webp",
+  "phone": "https://peik-blip.github.io/web3d/test/vintage-function/poster-phone.82222308b16f.webp",
+  "alt": "Vintage-liike Fredrikinkadulla kalustettuna, ylhäältä katsottuna."
  },
  "style": {
   "background": "#FFFFFF",
@@ -19,8 +19,8 @@
  "strings": {
   "chapter_store": "Tila ja käyttö",
   "caption_store": "Kauppa kalustetaan ja tuotteet sijoitetaan niin, että tila toimii asiakkaalle. Kyse on käytöstä, ei ilmeestä.",
-  "street": "Kadulta",
-  "drawing": "Piirros",
+  "furnished": "Kalustettu",
+  "empty": "Tyhjä tila",
   "use": "Käyttö",
   "areas": "Alueet",
   "whole": "Koko kauppa",
@@ -29,9 +29,10 @@
   "ring": "Väljä ja rauhallinen",
   "aisles": "Paljon esillä, silti selkeä",
   "bays": "Selkeät osastot",
-  "note_street": "",
-  "note_drawing": "",
-  "note_use": "Tilan käyttö: mistä tullaan sisään, mitä ikkunassa näkyy, missä tuotteet ovat, missä sovitetaan.",
+  "note_furnished": "",
+  "note_empty": "Sama tila tyhjänä: vain runko ja seinät.",
+  "note_use": "Tilan käyttö lattiassa: sisäänkäynti, ikkuna, tuotteet, pukukopit, kassa ja peilit.",
+  "note_route_now": "Asiakas tulee ovesta, kiertää tuotteiden ohi sovitukseen ja päätyy kassalle.",
   "note_areas": "Tuotealueet nyt. Seuraavaksi kolme tapaa kalustaa sama tila.",
   "caption_ring": "Kaikki tuotteet seinillä, keskellä matala pöytä valaisimen alla.",
   "caption_aisles": "Matalat kaksipuoliset rekit riveissä, seinillä kengät ja taitetut vaatteet.",
@@ -50,14 +51,6 @@
   "error": "3D-näkymää ei voitu ladata."
  },
  "views": {
-  "street": {
-   "type": "orthographic",
-   "dir_from_target_to_camera": [
-    0,
-    -1,
-    0
-   ]
-  },
   "overview": {
    "type": "orthographic",
    "dir_from_target_to_camera": [
@@ -143,47 +136,64 @@
    "legend": "areas",
    "sequence": [
     {
-     "key": "street",
-     "overlay": "tyoasu",
-     "view": "street",
-     "options": {
-      "layout": "now"
-     },
-     "areas": false,
-     "exterior": true,
-     "route": false,
-     "materials": false,
-     "label_key": "street",
-     "note_key": "note_street",
-     "legend": false
-    },
-    {
-     "key": "drawing",
+     "key": "furnished",
      "view": "overview",
      "options": {
       "layout": "now"
      },
-     "areas": false,
      "exterior": false,
-     "route": false,
      "materials": false,
-     "label_key": "drawing",
-     "note_key": "note_drawing",
+     "areas": false,
+     "route": false,
+     "label_key": "furnished",
+     "note_key": "note_furnished",
+     "legend": false
+    },
+    {
+     "key": "empty",
+     "empty": true,
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "exterior": false,
+     "materials": false,
+     "areas": false,
+     "route": false,
+     "label_key": "empty",
+     "note_key": "note_empty",
      "legend": false
     },
     {
      "key": "use",
      "use": true,
+     "empty": true,
      "view": "overview",
      "options": {
       "layout": "now"
      },
-     "areas": true,
      "exterior": false,
-     "route": false,
      "materials": false,
+     "areas": true,
+     "route": false,
      "label_key": "use",
      "note_key": "note_use",
+     "legend": true
+    },
+    {
+     "key": "route",
+     "use": true,
+     "empty": true,
+     "view": "overview",
+     "options": {
+      "layout": "now"
+     },
+     "exterior": false,
+     "materials": false,
+     "areas": true,
+     "route": true,
+     "label_key": "route",
+     "note_key": "note_route_now",
      "legend": true
     },
     {
@@ -192,10 +202,10 @@
      "options": {
       "layout": "now"
      },
-     "areas": true,
      "exterior": false,
-     "route": false,
      "materials": false,
+     "areas": true,
+     "route": false,
      "label_key": "areas",
      "note_key": "note_areas",
      "legend": true
@@ -445,13 +455,18 @@
    },
    {
     "id": "use_products",
-    "name_fi": "Tuotteet",
+    "name_fi": "Vaatteet ja tuotteet",
     "colour": "#F2CC5B"
    },
    {
     "id": "use_fitting",
-    "name_fi": "Sovitus",
+    "name_fi": "Pukukopit",
     "colour": "#9AA0A6"
+   },
+   {
+    "id": "use_pay",
+    "name_fi": "Kassa",
+    "colour": "#4A4F55"
    },
    {
     "id": "use_mirror",
@@ -473,13 +488,112 @@
   "layout_slot": "layout",
   "layout_none": "now",
   "overview": "overview",
-  "street": "street",
   "street_group": "Street",
-  "drawing_step": "drawing",
   "back_ms": 1200,
   "clip_pad": 20,
   "zone_opacity": 0.14,
   "route_dim": 0.35,
+  "route_dim_fixtures": 0.25,
+  "route_dim_walls": 0.6,
+  "floor_match": "^FLR_",
+  "keep_groups": [
+   "Shell",
+   "Shopfront",
+   "Street"
+  ],
+  "use_floor_z": 5,
+  "use_zone_opacity": 0.55,
+  "floor_plates": [
+   {
+    "label": "Use · Kassa",
+    "area": "use_pay",
+    "option": "layout:now",
+    "rect": [
+     4800,
+     1800,
+     6560,
+     3400
+    ]
+   }
+  ],
+  "routes": {
+   "now": [
+    [
+     3800,
+     300
+    ],
+    [
+     3800,
+     1400
+    ],
+    [
+     1150,
+     1600
+    ],
+    [
+     1150,
+     5500
+    ],
+    [
+     3000,
+     5500
+    ],
+    [
+     3000,
+     6900
+    ],
+    [
+     1400,
+     7200
+    ],
+    [
+     1400,
+     9800
+    ],
+    [
+     3000,
+     10100
+    ],
+    [
+     5100,
+     9400
+    ],
+    [
+     5200,
+     7000
+    ],
+    [
+     4400,
+     6700
+    ],
+    [
+     4400,
+     5600
+    ],
+    [
+     5600,
+     5300
+    ],
+    [
+     5600,
+     3700
+    ],
+    [
+     4400,
+     3700
+    ],
+    [
+     4300,
+     2600
+    ]
+   ]
+  },
+  "recolour": [
+   {
+    "match": "Ring · (Front|Rear) lamp · (shade|warm_underside)",
+    "colour": "#F2EDE0"
+   }
+  ],
   "envelope": {
    "street_clip_z": 1200.01,
    "tall_rules": [
@@ -529,7 +643,6 @@
     "bays"
    ],
    "clip": [
-    "street",
     "ring",
     "aisles",
     "bays"
@@ -559,29 +672,13 @@
    ],
    "grow_ms": 2500
   },
-  "overlay": {
-   "file": "https://peik-blip.github.io/web3d/test/vintage-function/tyoasu.079315df9f50.webp",
-   "corners": [
-    750,
-    290.5,
-    2800,
-    2450,
-    290.5,
-    2800,
-    750,
-    290.5,
-    250,
-    2450,
-    290.5,
-    250
-   ],
-   "fade_ms": 350
-  },
   "opening": {
    "chapter": "store",
    "dwell_ms": [
-    2500,
-    4200
+    3500,
+    5000,
+    10000,
+    8000
    ]
   }
  },
@@ -599,16 +696,16 @@
   },
   "reserve": {
    "tabs": 44,
-   "detail": 383
+   "detail": 407
   },
   "reserve_narrow": {
    "max_width": 335,
-   "detail": 430
+   "detail": 497
   },
   "reserve_tablet": {
    "min_width": 560,
    "tabs": 44,
-   "detail": 250
+   "detail": 245
   }
  },
  "loader": {
