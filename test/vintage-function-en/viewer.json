@@ -458,38 +458,44 @@
    {
     "id": "use_entrance",
     "name_fi": "Entrance",
-    "colour": "#3E8E7E",
+    "colour": "#168577",
     "name_en": "Entrance"
    },
    {
     "id": "use_window",
     "name_fi": "Window display",
-    "colour": "#E07A5F",
+    "colour": "#D85A3C",
     "name_en": "Window display"
    },
    {
     "id": "use_products",
     "name_fi": "Clothes and products",
-    "colour": "#F2CC5B",
+    "colour": "#386CC2",
     "name_en": "Clothes and products"
    },
    {
     "id": "use_fitting",
     "name_fi": "Fitting rooms",
-    "colour": "#9AA0A6",
+    "colour": "#8B65AD",
     "name_en": "Fitting rooms"
    },
    {
     "id": "use_pay",
     "name_fi": "Checkout",
-    "colour": "#4A4F55",
+    "colour": "#A43F65",
     "name_en": "Checkout"
    },
    {
     "id": "use_mirror",
     "name_fi": "Mirrors",
-    "colour": "#7FB3D5",
+    "colour": "#279EBA",
     "name_en": "Mirrors"
+   },
+   {
+    "id": "use_open",
+    "name_fi": "Room to move",
+    "colour": "#EEF0F2",
+    "name_en": "Room to move"
    }
   ],
   "pale": {
@@ -520,8 +526,21 @@
    "Street"
   ],
   "use_floor_z": 5,
-  "use_zone_opacity": 0.45,
+  "use_zone_opacity": 0.78,
   "floor_plates": [
+   {
+    "label": "Plan · Open floor",
+    "area": "use_open",
+    "option": "layout:now",
+    "rect": [
+     0,
+     0,
+     6600,
+     11000
+    ],
+    "under": true,
+    "opacity": 1
+   },
    {
     "label": "Plan · Window W1",
     "area": "use_window",

@@ -447,32 +447,37 @@
    {
     "id": "use_entrance",
     "name_fi": "Sisäänkäynti",
-    "colour": "#3E8E7E"
+    "colour": "#168577"
    },
    {
     "id": "use_window",
     "name_fi": "Ikkunanäyttely",
-    "colour": "#E07A5F"
+    "colour": "#D85A3C"
    },
    {
     "id": "use_products",
     "name_fi": "Vaatteet ja tuotteet",
-    "colour": "#F2CC5B"
+    "colour": "#386CC2"
    },
    {
     "id": "use_fitting",
     "name_fi": "Pukukopit",
-    "colour": "#9AA0A6"
+    "colour": "#8B65AD"
    },
    {
     "id": "use_pay",
     "name_fi": "Kassa",
-    "colour": "#4A4F55"
+    "colour": "#A43F65"
    },
    {
     "id": "use_mirror",
     "name_fi": "Peilit",
-    "colour": "#7FB3D5"
+    "colour": "#279EBA"
+   },
+   {
+    "id": "use_open",
+    "name_fi": "Liikkumatila",
+    "colour": "#EEF0F2"
    }
   ],
   "pale": {
@@ -503,8 +508,21 @@
    "Street"
   ],
   "use_floor_z": 5,
-  "use_zone_opacity": 0.45,
+  "use_zone_opacity": 0.78,
   "floor_plates": [
+   {
+    "label": "Plan · Open floor",
+    "area": "use_open",
+    "option": "layout:now",
+    "rect": [
+     0,
+     0,
+     6600,
+     11000
+    ],
+    "under": true,
+    "opacity": 1
+   },
    {
     "label": "Plan · Window W1",
     "area": "use_window",
