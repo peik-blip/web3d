@@ -178,7 +178,8 @@
      "route": false,
      "label_key": "use",
      "note_key": "note_use",
-     "legend": true
+     "legend": true,
+     "see_through": true
     },
     {
      "key": "route",
@@ -502,17 +503,149 @@
    "Street"
   ],
   "use_floor_z": 5,
-  "use_zone_opacity": 0.55,
+  "use_zone_opacity": 0.45,
   "floor_plates": [
    {
-    "label": "Use · Kassa",
+    "label": "Plan · Window W1",
+    "area": "use_window",
+    "option": "layout:now",
+    "rect": [
+     0,
+     0,
+     2700,
+     1000
+    ]
+   },
+   {
+    "label": "Plan · Window W2",
+    "area": "use_window",
+    "option": "layout:now",
+    "rect": [
+     4900,
+     0,
+     6600,
+     1000
+    ]
+   },
+   {
+    "label": "Plan · Entrance",
+    "area": "use_entrance",
+    "option": "layout:now",
+    "rect": [
+     2700,
+     0,
+     4900,
+     1600
+    ]
+   },
+   {
+    "label": "Plan · Checkout",
     "area": "use_pay",
     "option": "layout:now",
     "rect": [
-     4800,
-     1800,
-     6560,
+     4300,
+     1600,
+     6600,
      3400
+    ]
+   },
+   {
+    "label": "Plan · Front west wall",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     0,
+     1000,
+     1300,
+     6000
+    ]
+   },
+   {
+    "label": "Plan · Front table",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     1500,
+     2400,
+     2500,
+     4400
+    ]
+   },
+   {
+    "label": "Plan · Front east wall",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     5300,
+     3400,
+     6600,
+     6000
+    ]
+   },
+   {
+    "label": "Plan · Back west wall",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     0,
+     6450,
+     1300,
+     9800
+    ]
+   },
+   {
+    "label": "Plan · Back table",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     2300,
+     7400,
+     4100,
+     8600
+    ]
+   },
+   {
+    "label": "Plan · Back east wall",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     5300,
+     6450,
+     6600,
+     8800
+    ]
+   },
+   {
+    "label": "Plan · Focus rail",
+    "area": "use_products",
+    "option": "layout:now",
+    "rect": [
+     3200,
+     10200,
+     4560,
+     11000
+    ]
+   },
+   {
+    "label": "Plan · Mirrors",
+    "area": "use_mirror",
+    "option": "layout:now",
+    "rect": [
+     5300,
+     8800,
+     6600,
+     9800
+    ]
+   },
+   {
+    "label": "Plan · Fitting rooms",
+    "area": "use_fitting",
+    "option": "layout:now",
+    "rect": [
+     4560,
+     9800,
+     6600,
+     11000
     ]
    }
   ],
@@ -680,7 +813,8 @@
     10000,
     8000
    ]
-  }
+  },
+  "use_plates_only": true
  },
  "phone": {
   "turn": false,
