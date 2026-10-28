@@ -447,32 +447,32 @@
    {
     "id": "use_entrance",
     "name_fi": "Sisäänkäynti",
-    "colour": "#168577"
+    "colour": "#3C9112"
    },
    {
     "id": "use_window",
     "name_fi": "Ikkunanäyttely",
-    "colour": "#D85A3C"
+    "colour": "#D2961E"
    },
    {
     "id": "use_products",
     "name_fi": "Vaatteet ja tuotteet",
-    "colour": "#386CC2"
+    "colour": "#285ABD"
    },
    {
     "id": "use_fitting",
     "name_fi": "Pukukopit",
-    "colour": "#8B65AD"
+    "colour": "#8943AD"
    },
    {
     "id": "use_pay",
     "name_fi": "Kassa",
-    "colour": "#A43F65"
+    "colour": "#AD2E58"
    },
    {
     "id": "use_mirror",
     "name_fi": "Peilit",
-    "colour": "#279EBA"
+    "colour": "#19A476"
    },
    {
     "id": "use_open",
