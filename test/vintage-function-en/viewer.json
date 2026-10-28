@@ -458,37 +458,37 @@
    {
     "id": "use_entrance",
     "name_fi": "Entrance",
-    "colour": "#3C9112",
+    "colour": "#399B08",
     "name_en": "Entrance"
    },
    {
     "id": "use_window",
     "name_fi": "Window display",
-    "colour": "#D2961E",
+    "colour": "#E09B10",
     "name_en": "Window display"
    },
    {
     "id": "use_products",
     "name_fi": "Clothes and products",
-    "colour": "#285ABD",
+    "colour": "#1A55CB",
     "name_en": "Clothes and products"
    },
    {
     "id": "use_fitting",
     "name_fi": "Fitting rooms",
-    "colour": "#8943AD",
+    "colour": "#8E35BB",
     "name_en": "Fitting rooms"
    },
    {
     "id": "use_pay",
     "name_fi": "Checkout",
-    "colour": "#AD2E58",
+    "colour": "#BA2154",
     "name_en": "Checkout"
    },
    {
     "id": "use_mirror",
     "name_fi": "Mirrors",
-    "colour": "#19A476",
+    "colour": "#0EAF7A",
     "name_en": "Mirrors"
    },
    {
