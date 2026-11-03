@@ -208,7 +208,12 @@
    "look": "drawing",
    "except": []
   },
-  "rules": []
+  "rules": [],
+  "dip": {
+   "out": 300,
+   "in": 600,
+   "settle": 500
+  }
  },
  "image_planes": [
   {
