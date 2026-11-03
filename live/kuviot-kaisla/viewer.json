@@ -1,0 +1,318 @@
+{
+ "schema": 1,
+ "id": "kuviot",
+ "model": "KUVIOT_Kaisla",
+ "lang": "fi",
+ "scene": {
+  "file": "scene.e316a762b90f.b64.txt"
+ },
+ "poster": {
+  "wide": "poster-wide.webp",
+  "phone": "poster-phone.webp",
+  "alt": "Kaisla Kuviot: kahvila viivapiirroksena, seinillä kuviot."
+ },
+ "style": {
+  "background": "#FFFFFF",
+  "edge": "#111111",
+  "face": "#FFFFFF"
+ },
+ "strings": {
+  "kahvila": "Kahvila",
+  "kuviot": "Kuviot",
+  "piirros": "Piirros",
+  "ikkuna": "Ikkuna",
+  "sisaankaynti": "Sisäänkäynti",
+  "aaltosein": "Aaltoseinä",
+  "kolme": "Kolme kuviota",
+  "caption_kahvila": "Sama kahvila ensin viivapiirroksena. Tunnelma ei tule valaisimista vaan kuvioista: ikkunasta, sisäänkäynnistä ja aaltoseinästä.",
+  "caption_kuviot": "Katso jokainen kuvio erikseen: ikkunan grafiikka, sisäänkäynnin aallot ja seinän aaltolistat.",
+  "none": "",
+  "placeholder": "",
+  "hint": "",
+  "loading": "Ladataan…",
+  "error": "3D-näkymää ei voitu ladata."
+ },
+ "views": {
+  "house": {
+   "dir_from_target_to_camera": [
+    1,
+    -1.2,
+    1.6
+   ]
+  },
+  "street": {
+   "dir_from_target_to_camera": [
+    -0.2,
+    -1,
+    0.12
+   ]
+  },
+  "entrance": {
+   "dir_from_target_to_camera": [
+    1,
+    -1.2,
+    1.6
+   ],
+   "fit_region": {
+    "x": [
+     4250,
+     6050
+    ],
+    "y": [
+     -20,
+     1950
+    ],
+    "z": [
+     -110,
+     2650
+    ]
+   },
+   "isolate": true,
+   "snap_ratio": 1
+  },
+  "wave": {
+   "dir_from_target_to_camera": [
+    1,
+    -0.8,
+    1.3
+   ],
+   "fit_region": {
+    "x": [
+     -300,
+     100
+    ],
+    "y": [
+     -100,
+     10100
+    ],
+    "z": [
+     -200,
+     3700
+    ]
+   },
+   "isolate": true,
+   "snap_ratio": 1
+  }
+ },
+ "drag": {
+  "azimuth": 25,
+  "elevation": 10
+ },
+ "timing": {
+  "step_ms": 3500,
+  "move_ms": 1200,
+  "transition_ms": 850,
+  "wood_transition_ms": 400,
+  "sway": {
+   "leg": 8000,
+   "pause": 2000
+  }
+ },
+ "ui": {
+  "hint": false
+ },
+ "outline_only_groups": [],
+ "chapters": [
+  {
+   "key": "kahvila",
+   "label_key": "kahvila",
+   "caption_key": "caption_kahvila",
+   "show_caption": true,
+   "sequence": [
+    {
+     "key": "piirros",
+     "view": "house",
+     "label_key": "piirros",
+     "note_key": "none",
+     "photo": 0,
+     "materials": false,
+     "options": {},
+     "look": "drawing",
+     "hide": [
+      "Fasadi",
+      "East wall"
+     ]
+    },
+    {
+     "key": "kuviot",
+     "view": "house",
+     "label_key": "kuviot",
+     "note_key": "none",
+     "photo": 1,
+     "materials": true,
+     "options": {},
+     "look": "drawing",
+     "hide": [
+      "Fasadi",
+      "East wall"
+     ]
+    }
+   ]
+  },
+  {
+   "key": "kuviot",
+   "label_key": "kolme",
+   "caption_key": "caption_kuviot",
+   "show_caption": true,
+   "materials": true,
+   "sequence": [
+    {
+     "key": "ikkuna",
+     "view": "street",
+     "label_key": "ikkuna",
+     "note_key": "none",
+     "photo": 1,
+     "materials": true,
+     "options": {},
+     "look": "drawing",
+     "hide": [
+      "Fasadi low",
+      "East wall low"
+     ]
+    },
+    {
+     "key": "sisaankaynti",
+     "view": "entrance",
+     "label_key": "sisaankaynti",
+     "note_key": "none",
+     "photo": 1,
+     "materials": true,
+     "options": {},
+     "look": "drawing",
+     "hide": [
+      "Fasadi low",
+      "East wall low"
+     ]
+    },
+    {
+     "key": "aaltosein",
+     "view": "wave",
+     "label_key": "aaltosein",
+     "note_key": "none",
+     "photo": 1,
+     "materials": true,
+     "options": {},
+     "look": "drawing",
+     "hide": [
+      "Fasadi low",
+      "East wall low"
+     ]
+    }
+   ]
+  }
+ ],
+ "display": {
+  "edge": "#111111",
+  "white": {
+   "groups": [],
+   "look": "drawing",
+   "except": []
+  },
+  "rules": []
+ },
+ "image_planes": [
+  {
+   "key": "window_big",
+   "file": "window.webp",
+   "x": [
+    550,
+    2250
+   ],
+   "z": [
+    500,
+    2850
+   ],
+   "y": -500.5,
+   "u": [
+    0,
+    0.478857421875
+   ],
+   "v": [
+    0,
+    1
+   ],
+   "alphaTest": 0.3,
+   "opacity_from": "photo"
+  },
+  {
+   "key": "window_small",
+   "file": "window.webp",
+   "x": [
+    2800,
+    4100
+   ],
+   "z": [
+    500,
+    2850
+   ],
+   "y": -500.5,
+   "u": [
+    0.6337890625,
+    1
+   ],
+   "v": [
+    0,
+    1
+   ],
+   "alphaTest": 0.3,
+   "opacity_from": "photo"
+  }
+ ],
+ "variants": {
+  "default": "pahkina",
+  "aria": "Sävy",
+  "swatch": "#dbbf8f",
+  "keep_groups": [],
+  "sets": [
+   {
+    "key": "pahkina",
+    "label": "Pähkinä",
+    "colours": {
+     "#dbbf8f": "#6e4b32"
+    }
+   },
+   {
+    "key": "usva",
+    "label": "Usva",
+    "colours": {
+     "#dbbf8f": "#7d8a96"
+    }
+   }
+  ]
+ },
+ "texture": {
+  "file": "grain.webp",
+  "repeat_mm": [
+   600,
+   600
+  ],
+  "gain": 2,
+  "tags": [
+   "pattern:wave_wall",
+   "pattern:entrance"
+  ]
+ },
+ "phone": {
+  "turn": false,
+  "stage": {
+   "min": 1,
+   "max": 1
+  },
+  "reserve": {
+   "tabs": 44,
+   "detail": 248
+  },
+  "reserve_narrow": {
+   "max_width": 335,
+   "detail": 272
+  },
+  "reserve_tablet": {
+   "min_width": 560,
+   "tabs": 44,
+   "detail": 190
+  }
+ },
+ "loader": {
+  "class": "w3d-kuviot"
+ }
+}
